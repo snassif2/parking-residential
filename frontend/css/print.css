@@ -1,0 +1,10 @@
+@media print {
+  #navbar, .sidebar, .btn, #toast-container, .modal-overlay, .no-print { display: none !important; }
+  #page { margin-top: 0; }
+  .layout-sidebar { display: block; }
+  .content { padding: 0; max-width: 100%; }
+  body { background: white; font-size: 11pt; }
+  table { font-size: 10pt; }
+  .card { box-shadow: none; border: 1px solid #ccc; }
+  .watermark { color: rgba(200,0,0,.12); font-size: 80pt; }
+}
