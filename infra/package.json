@@ -1,0 +1,22 @@
+{
+  "name": "parking-residential-infra",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build":   "tsc",
+    "watch":   "tsc -w",
+    "cdk":     "cdk",
+    "deploy":  "cdk deploy --all --require-approval never",
+    "destroy": "cdk destroy --all",
+    "diff":    "cdk diff"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.130.0",
+    "constructs":  "^10.3.0"
+  },
+  "devDependencies": {
+    "@types/node":   "^20.11.0",
+    "aws-cdk":       "^2.130.0",
+    "typescript":    "^5.3.3"
+  }
+}

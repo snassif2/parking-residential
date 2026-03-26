@@ -1,4 +1,6 @@
+// Auto-detect adapter: Phase 2 (API) when env.js has an API_URL, else Phase 1 (localStorage)
 import { seedIfEmpty } from './adapters/local-storage-adapter.js';
+export const IS_PHASE2 = !!(window.__ENV?.API_URL);
 import { getSession, isLoggedIn } from './auth/auth-service.js';
 import { route, resolve, navigate } from './config/routes.js';
 import { renderNavbar } from './components/navbar.js';

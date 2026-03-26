@@ -1,0 +1,25 @@
+{
+  "name": "parking-residential-lambdas",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build":   "tsc -p tsconfig.build.json",
+    "watch":   "tsc -w -p tsconfig.build.json",
+    "test":    "jest"
+  },
+  "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.500.0",
+    "@aws-sdk/client-dynamodb":                 "^3.500.0",
+    "@aws-sdk/client-s3":                       "^3.500.0",
+    "@aws-sdk/lib-dynamodb":                    "^3.500.0",
+    "@aws-sdk/s3-request-presigner":            "^3.500.0",
+    "pdfkit":                                   "^0.14.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.130",
+    "@types/node":       "^20.11.0",
+    "@types/pdfkit":     "^0.13.3",
+    "ts-node":           "^10.9.2",
+    "typescript":        "^5.3.3"
+  }
+}
